@@ -13,6 +13,11 @@ class ProductsSeeder extends Seeder
      */
     public function run(): void
     {
-        Product::factory(10)->create();
+        //Product::factory(10)->create();
+
+        Product::factory()->create([
+             'sku' => 'Test User',
+             'name' => 'Test User',
+         ]);
     }
 }
